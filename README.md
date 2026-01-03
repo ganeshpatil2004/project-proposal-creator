@@ -1,30 +1,33 @@
 # Project Proposal Creator
 
-A web application to create professional project proposals with authentication,
-preview, and PDF export.
+Project Proposal Creator is a web-based application that allows users to securely log in, create detailed project proposals, preview them, and export them as PDFs.
 
 ## Features
-- User Signup & Login (Firebase Authentication)
-- Create Project Proposals
-- Save Proposals to Firestore
-- Preview Proposal in Professional Format
-- Download Proposal as PDF
+- User authentication (Signup / Login)
+- Create project proposals
+- Add project details (client info, scope, pricing, timeline)
+- Preview proposals
+- Download proposal as PDF
+- Logout functionality
 
-## Tech Stack
+## Technologies Used
 - React (Vite)
 - Firebase Authentication
 - Firebase Firestore
-- html2pdf.js
+- HTML2PDF.js
+- CSS
 
-## How to Run
+## How to Run Locally
 1. Clone the repository
 2. Run `npm install`
 3. Run `npm run dev`
-4. Open http://localhost:5173
+4. Open `http://localhost:5173`
 
 ## Demo Flow
-1. Signup / Login
-2. Dashboard
-3. Create New Proposal
-4. Preview Proposal
-5. Download PDF
+1. User login
+2. Create proposal
+3. Add project details
+4. Preview and download proposal
+
+## Author
+Ganesh Patil
