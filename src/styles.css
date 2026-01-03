@@ -1,0 +1,156 @@
+/* =========================
+   GLOBAL STYLES
+   ========================= */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+/* Common container */
+.container {
+  width: 380px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   INPUTS (NO GLOBAL MARGIN)
+   ========================= */
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: #f9fafb;
+}
+
+/* Focus */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background: #ffffff;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.25);
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  height: 120px;
+  line-height: 1.5;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Primary & Outline */
+.primary-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-weight: 600;
+}
+
+.outline-btn {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.outline-btn:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* =========================
+   PASSWORD TOGGLE
+   ========================= */
+
+.password-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.password-toggle input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   PROPOSAL FORM
+   ========================= */
+
+.proposal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Labels */
+.proposal-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+/* spacing ONLY for single-column fields */
+.proposal-form > input,
+.proposal-form > textarea {
+  margin: 8px 0;
+}
+
+/* Two-column row (Pricing & Timeline) */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.row div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CRITICAL: prevent overlap */
+.row input {
+  margin: 0;
+}
